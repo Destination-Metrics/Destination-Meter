@@ -92,7 +92,6 @@ function parseMyDate($month_date, $year_time) //returns the properly formatted d
 			$month = '12'; 
 		}
 
-
 	list($blank, $year, $splitTime) = explode(' ', $year_time); //seperate year from time
 	list($time, $microTime) = explode('.', $splitTime); //truncate the decimal point (no microseconds)
 	$date = $year . "-" . $month . "-" . $day . " " . $time; //concatinate the new date string
